@@ -5,7 +5,6 @@
 #include <ncurses.h>
 
 class game {
-
 private:
 
     int score=0;

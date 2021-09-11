@@ -6,7 +6,7 @@ void game::game_process(){
     clear();
     this->max_score=std::max(this->max_score,this->score);
     this->max_last();
-    if(!val_check) this->new_value();
+    if(!val_check) this->new_value(), val_check=true;
     this->print();
 
     if (this->check()){
@@ -98,7 +98,7 @@ void game::scoreboard(){
     for (int i:vc){
         a++;
         printw("%d. %d\n",a,i);
-        if (a>10) break;
+        if (a>=10) break;
     }
     printw("%s","\nBosh menyuga qaytish uchun istalgan tugmani bosing.");
     refresh();

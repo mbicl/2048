@@ -14,7 +14,6 @@ int main(){
     in.close();
 
     srand(time(NULL));
-    
     initscr();
 
     while (1){
