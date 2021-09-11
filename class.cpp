@@ -1,6 +1,6 @@
 #include "class.h"
 
-bool val_check=false;
+bool val_check = false;
 
 void game::game_process(){
     clear();
