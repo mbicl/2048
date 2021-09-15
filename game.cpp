@@ -15,6 +15,7 @@ int main(){
 
     srand(time(NULL));
     initscr();
+    start_color();
 
     while (1){
         printw("%s","2048 MENYU\n");

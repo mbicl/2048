@@ -3,6 +3,7 @@
 
 #include <bits/stdc++.h>
 #include <ncurses.h>
+#include <curses.h>
 
 class game {
 private:

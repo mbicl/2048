@@ -22,6 +22,7 @@ void game::game_process(){
         char c=getchar();
 
         if (c=='y'){
+            val_check=false;
             this->new_game();
             this->game_process();
         }
@@ -279,11 +280,28 @@ void game::right(){
 }
 
 void game::print(){
+    init_pair(2,COLOR_WHITE,COLOR_BLACK);
+    init_pair(4,COLOR_YELLOW,COLOR_BLACK);
+    init_pair(8,COLOR_MAGENTA,COLOR_BLACK);
+    init_pair(16,COLOR_CYAN,COLOR_BLACK);
+    init_pair(32,COLOR_GREEN,COLOR_BLACK);
+    init_pair(64,COLOR_RED,COLOR_BLACK);
+    init_pair(128,COLOR_BLUE,COLOR_BLACK);
+    init_pair(256,COLOR_GREEN,COLOR_RED);
+    init_pair(512,COLOR_WHITE,COLOR_RED);
+    init_pair(1024,COLOR_YELLOW,COLOR_RED);
+    init_pair(2048,COLOR_CYAN,COLOR_RED);
+    init_pair(4096,COLOR_BLUE,COLOR_RED);
+    init_pair(8192,COLOR_MAGENTA,COLOR_RED);
+    init_pair(16384,COLOR_RED,COLOR_BLUE);
+
     for (int i=0; i<4; i++){
         for (int j=0; j<4; j++){
             for (int k=0;k<6-std::to_string(table[i][j]).size();k++)
                 printw(" ");
+            attron(COLOR_PAIR(table[i][j]));
             printw("%d", table[i][j]);
+            attroff(COLOR_PAIR(table[i][j]));
         }
         printw("\n\n");
     }
