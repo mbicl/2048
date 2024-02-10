@@ -118,7 +118,8 @@ void game::help(){
 void game::about(){
     clear();
     printw("%s", "Muallif: Baxriddinov Maqsud.\nToshkent axborot texnologiyalari universiteti Samarqand filiali \nDasturiy injiniring yo'nalishi 2-kurs talabasi.");
-    printw("%s", "\nTelegram: t.me/MBI_n1\nTelegram kanal: t.me/cp_club_mbi\n\n");
+    printw("%s", "\n\nEmail: baxriddinovmaqsud@gmail.com\nTelegram: t.me/mbicc\nTelegram kanal: t.me/mbi_ch\n\n");
+    printw("%s", "Sana: 2021-08-20\n\n");
     printw("Bosh menyuga qaytish uchun istalgan tugmani bosing\n");
     refresh();
     getch();
