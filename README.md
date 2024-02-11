@@ -9,5 +9,5 @@ Kompilyatsiya qilish uchun kerak bo'ladigan kutubxonalarni o'rnatish | Installin
 Kompilyatisiya qilish | Compiling:
 
 ```bash
-    g++ -o 2048 game.cpp class.cpp `pkg-config --cflabs --libs ncurses`
+    g++ -o 2048 game.cpp class.cpp `pkg-config --cflags --libs ncurses`
 ```
